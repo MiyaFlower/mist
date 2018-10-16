@@ -374,7 +374,7 @@ const Utils = {
     accounts = accounts.map(a => a.toLowerCase());
     balances = balances.map(b => parseInt(b, 10));
 
-    return _.object(accounts, '50');
+    return _.object(accounts, balances);
   },
   *getUiAccountBalances() {
     // check balances on the pgetUiAccountsBalancesage
