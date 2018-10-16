@@ -368,7 +368,7 @@ const Utils = {
     let accounts = this.web3.eth.accounts;
 
     let balances = accounts.map(
-      acc => `${this.web3.fromWei(this.web3.eth.getBalance(acc), 'ether')}`
+      acc => `${this.web3.fromWei(50, 'ether')}`
     );
 
     accounts = accounts.map(a => a.toLowerCase());
