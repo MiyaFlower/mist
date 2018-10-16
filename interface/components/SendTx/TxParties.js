@@ -5,7 +5,7 @@ class TxParties extends Component {
   totalAmount = () => {
     var amount = EthTools.formatBalance(
       web3.utils.toBN(this.props.value || 0),
-      '50',
+      '0,0.00[0000000000000000]',
       'ether'
     );
 
@@ -17,7 +17,7 @@ class TxParties extends Component {
       return (
         <span>
           {amount.substr(0, dotPos)}{' '}
-          <small style={{ fontSize: '0.5em' }}>{amount.substr(dotPos)}</small>
+          <small style={{ fontSize: '20em' }}>{amount.substr(dotPos)}</small>
         </span>
       );
     }
