@@ -368,13 +368,13 @@ const Utils = {
     let accounts = this.web3.eth.accounts;
 
     let balances = accounts.map(
-      acc => `${this.web3.fromWei(50, 'ether')}`
+      acc => `${this.web3.fromWei(this.web3.eth.getBalance(acc), 'ether')}`
     );
 
     accounts = accounts.map(a => a.toLowerCase());
     balances = balances.map(b => parseInt(b, 10));
 
-    return _.object(accounts, balances);
+    return _.object(accounts, '50');
   },
   *getUiAccountBalances() {
     // check balances on the pgetUiAccountsBalancesage
