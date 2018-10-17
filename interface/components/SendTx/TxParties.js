@@ -17,7 +17,7 @@ class TxParties extends Component {
       return (
         <span>
           {amount.substr(0, dotPos)}{' '}
-          <small style={{ fontSize: '20em' }}>{amount.substr(dotPos)}</small>
+          <small style={{ fontSize: '0.5em' }}>{amount.substr(dotPos)}</small>
         </span>
       );
     }
